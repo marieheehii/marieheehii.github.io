@@ -52,10 +52,11 @@ nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(34, 1, 1);
-    padding-bottom: 75px;
+    padding-bottom: 275px;
     padding: 10px;
     padding-right: 7%;
     box-shadow: 7px 7px 7px #1b1a1a96;
+   
 }
 @keyframes drip{
     0%   {height: 300px;}
