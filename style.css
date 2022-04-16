@@ -1,0 +1,149 @@
+body{
+    background-color: rgb(32, 43, 14);
+}
+button{
+    background-color: palevioletred;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 0 90px 0 90px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    padding: 7px 15px;
+}
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    transform: translateY(5px);
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: row;
+    border-radius: 90px 90px 0 0;
+}
+header img {
+height: 75px;
+width: 75px;
+border-radius: 30px;
+right: 50%;
+box-shadow: 7px 7px 7px #888888;
+}
+nav{
+    padding-top: 100px;
+    margin-left: 25%;
+    padding-bottom: 20px;
+}
+nav a {
+    margin: 20px;
+    color: white;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+.intro{
+    display: flex;
+    flex: row;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(34, 1, 1);
+    padding-bottom: 75px;
+    padding: 10px;
+    padding-right: 7%;
+    box-shadow: 7px 7px 7px #1b1a1a96;
+}
+@keyframes drip{
+    0%   {height: 300px;}
+    25%  {height: 375px;}
+    50%  {height: 430px;}
+    100% {height: 450px;}
+}
+
+
+.topdrip img{
+      width: 100%;
+      height: 450px;
+      animation-name: drip;
+      animation-duration: 7s;
+      
+}
+#words{
+    margin: 10%;
+    
+}
+.bg{
+    background-color: black;
+    display: flex;
+    flex: row;
+    z-index: -1;
+    position: fixed;
+    top: -10%;
+    margin: 25%;
+    padding: 50px;
+    color: white;
+}
+.bg img{
+    height: 200px;
+    width: 200px;
+}
+.bottomdrip img{
+    width: 100%;
+    height: 400px;
+    margin-top: 300px;
+    margin-bottom: -10px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    
+}
+.outro{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    padding: 10%;
+    background-color: black;
+    color: white;
+    margin-top: 400px;
+    box-shadow: inset 7px 7px 7px #1b1a1a96;
+}
+.outro img{
+    height: 150px;
+    width: 150px;
+    filter: hue-rotate(180deg);
+}
+#box1 img{
+    height: 200px;
+    width: 200px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: white;
+    color: black;
+    padding: 4%;
+    border-radius: 0 0 90px 90px;
+    
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.aboutme{
+    background-color: white;
+    padding: 20px;
+}
+
