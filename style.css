@@ -1,8 +1,12 @@
 body{
-    background-color: rgb(32, 43, 14);
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-size: xx-large;
 }
 button{
-    background-color: palevioletred;
+    background-color: #184e20 ;
     display: inline-block;
     text-decoration: none;
     border: none;
@@ -13,14 +17,15 @@ button{
     padding: 7px 15px;
 }
 button:hover{
-    background-color: aqua;
+    background-color: rgb(84, 170, 67);
 }
 button:active{
     transform: translateY(5px);
+    background-color: #0d2f12;
 }
 header {
-    background-color: black;
-    color: white;
+    background-color: #92898A;
+    color: #EDE3E4;
     display: flex;
     flex: row;
     border-radius: 90px 90px 0 0;
@@ -30,25 +35,33 @@ height: 75px;
 width: 75px;
 border-radius: 30px;
 right: 50%;
-box-shadow: 7px 7px 7px #888888;
+box-shadow: 7px 7px 7px #1e1a1aa3;
 }
 nav{
     padding-top: 100px;
-    margin-left: 25%;
+    margin-left: 20%;
     padding-bottom: 20px;
+    font-size: large;
 }
 nav a {
     margin: 20px;
-    color: white;
+    color: #EDE3E4;
+    text-decoration: none;
 }
 nav a:hover{
-    background-color: white;
-    color: black;
+    animation-name: sway;
+    animation-duration: 6s;
+}
+@keyframes sway{
+    0%   {color: #184e20; margin: 21px; }
+  25%  {color: rgb(0, 255, 47);margin: 23px;}
+  50%  {color: #184e20;margin: 25px;}
+  100% {color: green;margin: 23px;} 
 }
 .intro{
     display: flex;
     flex: row;
-    background-color: white;
+    background-color: #EDE3E4;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(34, 1, 1);
@@ -56,7 +69,22 @@ nav a:hover{
     padding: 10px;
     padding-right: 7%;
     box-shadow: 7px 7px 7px #1b1a1a96;
-   
+}
+
+.intro h1:hover{
+    animation-name: welcome;
+    animation-duration: 2s;
+}
+@keyframes welcome{
+    0% {transform: translateX(4px);}
+    25% {transform: translateX(-4px);}
+    50% {transform: translateX(4px);}
+    100% {transform: translateX(-4px);}
+}
+#desk{
+    margin-top: -500px;
+    margin-left: 70%;
+    z-index: 3;
 }
 @keyframes drip{
     0%   {height: 300px;}
@@ -64,6 +92,7 @@ nav a:hover{
     50%  {height: 430px;}
     100% {height: 450px;}
 }
+
 
 
 .topdrip img{
@@ -78,7 +107,7 @@ nav a:hover{
     
 }
 .bg{
-    background-color: black;
+    background-color: #92898A;
     display: flex;
     flex: row;
     z-index: -1;
@@ -86,7 +115,7 @@ nav a:hover{
     top: -10%;
     margin: 25%;
     padding: 50px;
-    color: white;
+    color: #EDE3E4;
 }
 .bg img{
     height: 200px;
@@ -106,34 +135,41 @@ nav a:hover{
     
 }
 .outro{
-    display: flex;
-    flex: row;
+    display: block;
     justify-content: space-around;
     padding-bottom: 100px;
     padding: 10%;
-    background-color: black;
-    color: white;
-    margin-top: 400px;
-    box-shadow: inset 7px 7px 7px #1b1a1a96;
+    background-color: #92898A;
+    color: #EDE3E4;
+    margin-top: 550px;
+}
+
+#boxes1and2{
+    display: flex;
+    flex: column;
 }
 .outro img{
     height: 150px;
     width: 150px;
-    filter: hue-rotate(180deg);
+}
+.outro img:hover{
+    animation-name: welcome;
+    animation-duration: 2s;
 }
 #box1 img{
     height: 200px;
     width: 200px;
 }
 footer{
-    display: flex;
-    justify-content: space-between;
-    
-    background-color: white;
-    color: black;
-    padding: 4%;
+    background-color: #EDE3E4;
+    color: #92898A;
+    padding: 3%;
     border-radius: 0 0 90px 90px;
     
+}
+footer h1:hover{
+    animation-name: welcome;
+    animation-duration: 2s;
 }
 
 
@@ -144,7 +180,7 @@ footer{
     width: 50%;
   }
 .aboutme{
-    background-color: white;
+    background-color: #EDE3E4;
     padding: 20px;
 }
 

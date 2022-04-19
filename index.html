@@ -9,7 +9,7 @@
 </head>
 <body>
    <header>
-<img id="logo" src="Images/photo-icon.png">
+<img id="logo" src="Images/monstera-icon.jpg">
    
     <nav>
         <a href="index.html">Home</a>
@@ -29,12 +29,12 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                  Voluptatibus labore veritatis maiores distinctio dolores fugiat a! Delectus explicabo atque vel voluptate in? Natus eius rerum earum, enim distinctio commodi aut?</p>
                 <p>Thank you for taking the time to view my portfolio.</p>
-                <button>Resume</button>
-                <button>Iquiry</button>
+                <button onclick="window.location.href='resume.html';">Resume</button>
+                <button onclick="document.getElementById('footer').scrollIntoView();">Iquiry</button>
             </div>
         </div>
-        <img src="Images/photo-icon.png">
-    </section>
+        <img id="monstera" src="Images/monstera-leaves.png" style="height: 600px; width: 450px;">
+    </section><img src="Images/desk.png" id="desk" style="height: 400px; width: 400px;">
     <!--<section class="topdrip">
         <img src="Images/blackdrip.png">
     </section>-->
@@ -53,32 +53,38 @@
         <img src="Images/blackdrip.png">
     </section>-->
     <section class="outro">
-        <div id="box1">
-            <img src="Images/photo-icon.png">
-            <p>Cum congue neglegentur et. Ignota consetetur ei eam.</p>
-        </div>
-        <div id="boxes2and3">
+        <div id="boxes1and2">
             <div id="box2">
-            <img src="Images/photo-icon.png">
-            <p>Cum congue neglegentur et. Ignota consetetur ei eam.</p>
+            <img src="Images/visual-studio-code-logo.png">
+            <p>I have over over two years of experience with Visual Studio Code.</p>
         </div>
         <div id="box3">
-            <img src="Images/photo-icon.png">
-            <p>Cum congue neglegentur et. Ignota consetetur ei eam.</p>
+            <img src="Images/Photoshop-and-illustrator.jfif">
+            <p>I have over a year of graphic design experience with ADobe Photoshop and Illustrator.</p>
+        </div>
+        <div id="boxes1and2">
+            <div id="box2">
+            <img src="Images/unity-engine.jfif">
+            <p>I have over a year of video game development experience with Unity Engine.</p>
+        </div>
+        <div id="box3">
+            <img src="Images/clipstudiopaint.jfif">
+            <p>I have over 5 years of animation and illustration experience with Clip Studio Paint.</p>
         </div>
         </div>   
     </section>
-    <footer>
+    <footer id="footer">
+        <h1>Get in Touch!!</h1>
   <form action="https://formspree.io/f/meqnrpkv"
   method="POST">
   <label>
     Your Email:
     <input type="email" name="email">
-  </label><br>
+  </label><br><br>
   <label>
-    Your Message:
+    A Message:
     <textarea name="message"></textarea>
-  </label><br>
+  </label><br><br>
   <button type="submit">Send</button></form>
     </footer>
     
