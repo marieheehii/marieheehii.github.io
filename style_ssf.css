@@ -1,0 +1,203 @@
+body{
+    background-image: linear-gradient(rgb(201, 228, 246), rgb(49, 6, 26));
+    font-family: Verdana;
+}
+
+header{
+    display: flex;
+    flex: row;
+    background-color: pink;
+
+}
+#logo{
+    box-shadow: none;
+    height: 100px;
+    width: 100px;
+
+}
+.logsign{
+    display: flex;
+    flex: row;
+    margin-left: 70%;
+}
+.logsign h4{
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.logsign h4:hover{
+    background-color: aliceblue;
+}
+
+
+nav{
+    
+    background-color: pink;
+    text-align: center;
+    box-shadow: 10px 10px 8px #25010180;
+}
+nav a 
+{
+    margin: 10px;
+    margin-left: 4px;
+    padding: 20px;
+    padding-bottom: 5px;
+    color: rgb(155, 81, 93);
+}
+nav a:hover
+{
+    background-color: aliceblue;
+}
+.info{
+    display: flex;
+    flex: row;
+    margin-top: 40px;
+    height: 500px;
+    background-image: url('./Assets/burlap.jpg');
+    box-shadow: 10px 10px 8px #25010180;
+    border-radius: 20px;
+}
+.words{
+    width: 50%;
+    padding-top: 50px;
+    background-color: pink;
+    border-radius: 20px;
+    margin: 50px;
+    box-shadow: 10px 10px 8px #25010180;
+    text-align: center;
+}
+#toppic{
+    height: 100%;
+    width: 50%;
+}
+#toppic img{
+    height: 100%;
+    width: 100%;
+    animation: animate 10s infinite step-end;
+    background-image: url('./Assets/queen\ with\ pink\ flowers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes animate { 
+    25%{
+        background: url('./Assets/pink\ bg\ cactuses.jpg');
+        background-image: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url('./Assets/pineapple.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%
+    {
+        background: url('./Assets/wedding\ 1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%
+    {
+        background: url('./Assets/montesora\ pink\ bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.products{
+    margin-top: 200px;
+}
+.products h2{
+    text-align: center;
+}
+.product1{
+    display: flex;
+    flex: row;
+    margin-top: 40px;
+
+}
+.product1 > img {
+    width: 60%;
+    height: 60vh;
+    border-radius: 0 100px 0 0;
+}
+.product1 p{
+    padding: 100px;
+}
+.product2{
+    display: flex;
+    flex: row;
+    margin-top: 50px;
+}
+.product2 > img {
+    width: 40%;
+    height: 60vh;
+    border-radius: 100px 0 0 0;
+}
+.product2 p{
+    padding: 100px;
+}
+.containerbottom{
+    margin-top: 200px;
+    background-image: url('./Assets/burlap.jpg');
+    box-shadow: 10px 10px 8px #25010180;
+    border-radius: 10px;
+}
+.containerbottom > h2{
+    text-align: center;
+}
+
+.hotprods{
+    display: flex;
+    flex: row;
+    margin-top: 40px;
+    justify-content: center;
+}
+.hotprods > div{
+    margin: 40px;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #25010180;
+
+}
+
+.hotprods img {
+    border-radius: 100px 100px 5px 5px;
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 90 90 10 10;
+    box-shadow: 10px 10px 8px #25010180;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+}
+
+footer{
+    background-image: url('./Assets/soil2.png');
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: 100px; 
+    height: 300px;  
+}
+button
+{
+    background-color: aliceblue;
+    border-radius: 20px
+}
+button :hover{
+    background-color: rgb(155, 81, 93);
+}
+.Footertxt
+{
+    background-color: pink;
+margin: 5 px;
+border-radius: 20px;
+justify-content: center;
+text-align: center;
+}
+
